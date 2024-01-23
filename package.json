@@ -1,10 +1,10 @@
 {
-    "name": "odoo-snippets",
-    "displayName": "Odoo Code Snippets",
-    "description": "This snippets can help you to develop Odoo modules faster and with no Typing Errors.",
+    "name": "flectra-snippets",
+    "displayName": "Flectra Code Snippets",
+    "description": "This snippets can help you to develop Flectra modules faster and with no Typing Errors.",
     "version": "2.3.0",
     "license": "SEE LICENSE IN LICENSE",
-    "publisher": "mstuttgart",
+    "publisher": "jamotion",
     "author": {
         "name": "Michell Stuttgart",
         "email": "michellstut@gmail.com"
@@ -20,19 +20,19 @@
         "Snippets"
     ],
     "keywords": [
-        "odoo",
+        "flectra",
         "snippets",
         "python",
         "xml",
         "csv"
     ],
     "bugs": {
-        "url": "https://github.com/mstuttgart/vscode-odoo-snippets/issues",
+        "url": "https://github.com/jamotion/vscode-flectra-snippets/issues",
         "email": "michellstut@gmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/mstuttgart/vscode-odoo-snippets"
+        "url": "https://github.com/jamotion/vscode-flectra-snippets"
     },
     "contributes": {
         "snippets": [

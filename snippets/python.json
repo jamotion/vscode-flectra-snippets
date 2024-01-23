@@ -7,8 +7,8 @@
         ],
         "description": "Add ipdb debugger command"
     },
-    "odoo_manifest": {
-        "prefix": "oman",
+    "flectra_manifest": {
+        "prefix": "fman",
         "body": [
             "{",
             "\t'name': '${1}',",
@@ -39,162 +39,162 @@
             "}",
             "$0"
         ],
-        "description": "Create Odoo Manifest"
+        "description": "Create Flectra Manifest"
     },
-    "odoo_new_model": {
-        "prefix": "omod",
+    "flectra_new_model": {
+        "prefix": "fmod",
         "body": [
             "\n\nclass ${2:${1/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.${3|Model,AbstractModel|}):",
             "\t_name = '${1:model.technical.name}'",
             "\t_description = '${4:${1/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}'",
             "$0"
         ],
-        "description": "Create New Odoo Model"
+        "description": "Create New Flectra Model"
     },
-    "odoo_inherit_model": {
-        "prefix": "omodi",
+    "flectra_inherit_model": {
+        "prefix": "fmodi",
         "body": [
             "\n\nclass ${2:${1/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.${3|Model,AbstractModel|}):",
             "\t_inherit = '${1:model.technical.name}'",
             "$0"
         ],
-        "description": "Inherit Existing Odoo Model"
+        "description": "Inherit Existing Flectra Model"
     },
-    "odoo_new_wizard": {
-        "prefix": "owiz",
+    "flectra_new_wizard": {
+        "prefix": "fwiz",
         "body": [
             "\n\nclass ${2:${1/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.TransientModel}):",
             "\t_name = '${1:model.technical.name}'",
             "\t_description = '${4:${1/([a-z]+)([\\._]?)/${1:/capitalize}${2:+ }/g}}'",
             "$0"
         ],
-        "description": "Create New Odoo Wizard"
+        "description": "Create New Flectra Wizard"
     },
-    "odoo_inherit_wizard": {
-        "prefix": "owizi",
+    "flectra_inherit_wizard": {
+        "prefix": "fwizi",
         "body": [
             "\n\nclass ${2:${1/([a-z]+)[\\._]?/${1:/capitalize}/g}}(models.TransientModel}):",
             "\t_inherit = '${1:model.technical.name}'",
             "$0"
         ],
-        "description": "Inherit Existing Odoo Wizard"
+        "description": "Inherit Existing Flectra Wizard"
     },
-    "odoo_test_model": {
-        "prefix": "omodt",
+    "flectra_test_model": {
+        "prefix": "fmodt",
         "body": [
             "\n\nclass Test${1:ModuleName}(${3|TransactionCase,SingleTransactionCase,SavepointCase,HttpCase|}):",
             "\n\tdef setUp(self):",
             "\t\tsuper(Test${1:ModuleName}, self).setUp()",
             "$0"
         ],
-        "description": "Add Test Class to Odoo Model"
+        "description": "Add Test Class to Flectra Model"
     },
-    "odoo_field_binary": {
-        "prefix": "ofbin",
+    "flectra_field_binary": {
+        "prefix": "ffbin",
         "body": [
             "${1:new_field} = fields.Binary(string='${2}')",
             "$0"
         ],
         "description": "Add new field of type Binary"
     },
-    "odoo_field_boolean": {
-        "prefix": "ofbool",
+    "flectra_field_boolean": {
+        "prefix": "ffbool",
         "body": [
             "${1:new_field} = fields.Boolean(string='${2}')",
             "$0"
         ],
         "description": "Add new field of type Boolean"
     },
-    "odoo_field_char": {
-        "prefix": "ofchar",
+    "flectra_field_char": {
+        "prefix": "ffchar",
         "body": [
             "${1:new_field} = fields.Char(string='${2}')",
             "$0"
         ],
         "description": "Add new field of type Char"
     },
-    "odoo_field_date": {
-        "prefix": "ofdate",
+    "flectra_field_date": {
+        "prefix": "ffdate",
         "body": [
             "${1:new_field} = fields.Date(string='${2}')",
             "$0"
         ],
         "description": "Add new field of type Date"
     },
-    "odoo_field_datetime": {
-        "prefix": "oftime",
+    "flectra_field_datetime": {
+        "prefix": "fftime",
         "body": [
             "${1:new_field} = fields.Datetime(string='${2}')",
             "$0"
         ],
         "description": "Add new field of type DateTime"
     },
-    "odoo_field_float": {
-        "prefix": "offloat",
+    "flectra_field_float": {
+        "prefix": "fffloat",
         "body": [
             "${1:new_field} = fields.Float(string='${2}')",
             "$0"
         ],
         "description": "Add new field of type Float"
     },
-    "odoo_field_html": {
-        "prefix": "ofhtml",
+    "flectra_field_html": {
+        "prefix": "ffhtml",
         "body": [
             "${1:new_field} = fields.Html(string='${2}')",
             "$0"
         ],
         "description": "Add new field of type HTML"
     },
-    "odoo_field_int": {
-        "prefix": "ofint",
+    "flectra_field_int": {
+        "prefix": "ffint",
         "body": [
             "${1:new_field} = fields.Integer(string='${2}')",
             "$0"
         ],
         "description": "Add new field of type Integer"
     },
-    "odoo_field_text": {
-        "prefix": "oftxt",
+    "flectra_field_text": {
+        "prefix": "fftxt",
         "body": [
             "${1:new_field} = fields.Text(string='${2}')",
             "$0"
         ],
         "description": "Add new field of type Text"
     },
-    "odoo_field_selection": {
-        "prefix": "ofsel",
+    "flectra_field_selection": {
+        "prefix": "ffsel",
         "body": [
             "${1:new_field} = fields.Selection(string='${2}', selection=[('${3}', '${4}'), ('${5}', '${6}'),])",
             "$0"
         ],
         "description": "Add new field of type Selection"
     },
-    "odoo_field_many2one": {
-        "prefix": "ofm2o",
+    "flectra_field_many2one": {
+        "prefix": "ffm2o",
         "body": [
             "${1:new_field} = fields.Many2one(comodel_name='${2}', string='${3}')",
             "$0"
         ],
         "description": "Add new field of type Many2one"
     },
-    "odoo_field_many2many": {
-        "prefix": "ofm2m",
+    "flectra_field_many2many": {
+        "prefix": "ffm2m",
         "body": [
             "${1:new_field} = fields.Many2many(comodel_name='${2}', string='${3}')",
             "$0"
         ],
         "description": "Add new field of type Many2many"
     },
-    "odoo_field_one2many": {
-        "prefix": "ofo2m",
+    "flectra_field_one2many": {
+        "prefix": "ffo2m",
         "body": [
             "${1:new_field} = fields.One2many(comodel_name='${2}', inverse_name='${3}', string='${4}')",
             "$0"
         ],
         "description": "Add new field of type One2many"
     },
-    "odoo_method_create":{
-        "prefix": "omcreate",
+    "flectra_method_create":{
+        "prefix": "fmcreate",
         "body":[
             "@api.model",
             "def create(self, values):",
@@ -204,8 +204,8 @@
         ],
         "description": "Add a method create"
     },
-    "odoo_method_write": {
-        "prefix": "omwrite",
+    "flectra_method_write": {
+        "prefix": "fmwrite",
         "body": [
             "@api.multi",
             "def write(self, values):",
@@ -215,8 +215,8 @@
         ],
         "description": "Add a method write"
     },
-    "odoo_method_unlink": {
-        "prefix": "omunlink",
+    "flectra_method_unlink": {
+        "prefix": "fmunlink",
         "body": [
             "@api.multi",
             "def unlink(self):",
@@ -226,8 +226,8 @@
         ],
         "description": "Add a method unlink"
     },
-    "odoo_method_compute": {
-        "prefix": "omcomp",
+    "flectra_method_compute": {
+        "prefix": "fmcomp",
         "body": [
             "@api.depends('${1:field_name}')",
             "def _compute_${1:field_name}(self):",
@@ -236,8 +236,8 @@
         ],
         "description": "Add a method compute"
     },
-    "odoo_method_constrains": {
-        "prefix": "omconst",
+    "flectra_method_constrains": {
+        "prefix": "fmconst",
         "body": [
             "@api.constrains('${1:field_name}')",
             "def _check_${1:field_name}(self):",
@@ -247,8 +247,8 @@
         ],
         "description": "Add a constraint method"
     },
-    "odoo_method_onchange": {
-        "prefix": "omchange",
+    "flectra_method_onchange": {
+        "prefix": "fmchange",
         "body": [
             "@api.onchange('${1:field_name}')",
             "def _onchange_${1:field_name}(self):",
@@ -257,48 +257,48 @@
         ],
         "description": "Add a method onchange"
     },
-    "odoo_user_company": {
-        "prefix": "ousercomp",
+    "flectra_user_company": {
+        "prefix": "fusercomp",
         "body": [
             "self.env.user.company_id",
             "$0"
         ],
         "description": "Get the user's company record"
     },
-    "odoo_import_odoo": {
-        "prefix": "oimp",
+    "flectra_import_flectra": {
+        "prefix": "fimp",
         "body": [
-            "from odoo import _, api, fields, models",
+            "from flectra import _, api, fields, models",
             "$0"
         ],
-        "description" : "Add Odoo import"
+        "description" : "Add Flectra import"
     },
-    "odoo_import_odoo_test": {
-        "prefix": "oimpt",
+    "flectra_import_flectra_test": {
+        "prefix": "fimpt",
         "body": [
-            "from odoo.tests.common import  ${1|TransactionCase,SingleTransactionCase,SavepointCase,HttpCase|}",
+            "from flectra.tests.common import  ${1|TransactionCase,SingleTransactionCase,SavepointCase,HttpCase|}",
             "$0"
         ],
-        "description" : "Add Import to Odoo Tests"
+        "description" : "Add Import to Flectra Tests"
     },
-    "odoo_import_odoo_exceptions": {
-        "prefix": "oimper",
+    "flectra_import_flectra_exceptions": {
+        "prefix": "fimper",
         "body": [
-            "from odoo.exceptions import ${1|ValidationError,RedirectWarning,AccessDenied,AccessError,CacheMiss,MissingError,UserError|}",
+            "from flectra.exceptions import ${1|ValidationError,RedirectWarning,AccessDenied,AccessError,CacheMiss,MissingError,UserError|}",
             "$0"
         ],
     "description" : "Add return to Action Window Close"
     },
-    "odoo_return_actwin_close": {
-        "prefix": "oret_act_close",
+    "flectra_return_actwin_close": {
+        "prefix": "fret_act_close",
         "body": [
             "return {'type': 'ir.actions.act_window_close'}",
             "$0"
         ],
         "description" : "Add return to Action Window Close"
     },
-    "odoo_return_actwin": {
-        "prefix": "oret_act_close",
+    "flectra_return_actwin": {
+        "prefix": "fret_act_close",
         "body": [
             "return {",
                 "\t'name': ('${1:model.name}.action'),",

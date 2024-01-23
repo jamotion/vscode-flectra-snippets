@@ -34,7 +34,7 @@
 
 ## 2.0.0
 
-- [NEW] Add odoo snippet
+- [NEW] Add flectra snippet
 - [NEW] Add group snippet
 - [NEW] Add TransientModel snippet
 - [IMP] Simplify 'data' tag snippet

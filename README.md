@@ -1,27 +1,27 @@
 
 <h1 align="center">
   <br>
-  <a href="https://marketplace.visualstudio.com/items?itemName=mstuttgart.odoo-snippets">
-  <img src="https://github.com/mstuttgart/vscode-odoo-snippets/blob/main/images/icon.png?raw=true"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=jamotion.flectra-snippets">
+  <img src="https://github.com/jamotion/vscode-flectra-snippets/blob/main/images/icon.png?raw=true"></a>
   <br>
-  VSCode Odoo Snippets
+  VSCode Flectra Snippets
   <br>
 </h1>
 
-<h4 align="center">Develop Odoo modules faster and with no Typing Errors</h4>
+<h4 align="center">Develop Flectra modules faster and with no Typing Errors</h4>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=mstuttgart.odoo-snippets">
-    <img src="https://vsmarketplacebadges.dev/version-short/mstuttgart.odoo-snippets.png?style=for-the-badge&color=875A7B" alt="Version">
+  <a href="https://marketplace.visualstudio.com/items?itemName=jamotion.flectra-snippets">
+    <img src="https://vsmarketplacebadges.dev/version-short/jamotion.flectra-snippets.png?style=for-the-badge&color=875A7B" alt="Version">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=mstuttgart.odoo-snippets">
-<img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/mstuttgart.odoo-snippets?color=875A7B&style=for-the-badge">
+  <a href="https://marketplace.visualstudio.com/items?itemName=jamotion.flectra-snippets">
+<img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/jamotion.flectra-snippets?color=875A7B&style=for-the-badge">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=mstuttgart.odoo-snippets">
-<img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/mstuttgart.odoo-snippets?color=875A7B&style=for-the-badge">
+  <a href="https://marketplace.visualstudio.com/items?itemName=jamotion.flectra-snippets">
+<img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/jamotion.flectra-snippets?color=875A7B&style=for-the-badge">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=mstuttgart.odoo-snippets">
-<img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/r/mstuttgart.odoo-snippets?color=875A7B&style=for-the-badge">
+  <a href="https://marketplace.visualstudio.com/items?itemName=jamotion.flectra-snippets">
+<img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/r/jamotion.flectra-snippets?color=875A7B&style=for-the-badge">
   </a>
 </p>
 
@@ -37,9 +37,9 @@
 
 ## About
 
-This extension contains code snippets for [Odoo](https://www.odoo.com) to help you to develop Odoo modules faster and with no Typing Errors.
+This extension contains code snippets for [Flectra](https://www.flectra.com) to help you to develop Flectra modules faster and with no Typing Errors.
 
-All snippets follow the [OCA Maintainer Guidelines](https://github.com/OCA/maintainer-tools/blob/master/CONTRIBUTING.md) and are made to Odoo version `12.0`+.
+All snippets follow the [OCA Maintainer Guidelines](https://github.com/OCA/maintainer-tools/blob/master/CONTRIBUTING.md) and are made to Flectra version `12.0`+.
 
 
 ## Installation
@@ -52,7 +52,7 @@ Launch *Quick Open*
 Paste the following command and press `Enter`:
 
 ```
-ext install mstuttgart.odoo-snippets
+ext install jamotion.flectra-snippets
 ```
 
 ## Usage
@@ -77,14 +77,14 @@ Below is a list of all available snippets.
 | `ipdb`         | Import Python ipdb command |
 
 
-| Odoo Snippet | Description                            |
+| Flectra Snippet | Description                            |
 | ------------ | -------------------------------------- |
-| `oman`       | Create Odoo Manifest                   |
-| `omod`       | Create New Odoo Model                  |
-| `omodi`      | Inherit Existing Odoo Model            |
-| `owiz`       | Create New Odoo wizard                 |
-| `owizi`      | Inherit Existing Odoo wizard           |
-| `omodt`      | Create Test to Odoo Model              |
+| `oman`       | Create Flectra Manifest                   |
+| `omod`       | Create New Flectra Model                  |
+| `omodi`      | Inherit Existing Flectra Model            |
+| `owiz`       | Create New Flectra wizard                 |
+| `owizi`      | Inherit Existing Flectra wizard           |
+| `omodt`      | Create Test to Flectra Model              |
 | `ofbin`      | Add new field Binary                   |
 | `ofbool`     | Add new field Boolean                  |
 | `ofchar`     | Add new field Char                     |
@@ -104,9 +104,9 @@ Below is a list of all available snippets.
 | `omcomp`     | Add a method compute                   |
 | `omchange`   | Add a method onchange                  |
 | `ousercomp`  | Add self.user.company_id snippets      |
-| `oimp`       | Add Odoo import snippets               |
-| `oimpt`      | Add Import to Odoo Tests snippets      |
-| `oimper`     | Add Import to Odoo Exceptions snippets |
+| `oimp`       | Add Flectra import snippets               |
+| `oimpt`      | Add Import to Flectra Tests snippets      |
+| `oimper`     | Add Import to Flectra Exceptions snippets |
 
 </details>
 
@@ -115,7 +115,7 @@ Below is a list of all available snippets.
 
 | XML Snippet  | Description                              |
 | ------------ | ---------------------------------------- |
-| `odoo`       | Create Odoo Tag                          |
+| `flectra`       | Create Flectra Tag                          |
 | `oform`      | Create Form View                         |
 | `oformi`     | Inherit Existing Form View               |
 | `otree`      | Create Tree View                         |
@@ -141,7 +141,7 @@ Below is a list of all available snippets.
 | `omenuc`     | Create New Menu Item for Categories      |
 | `omenua`     | Create New Menu Item for Actions         |
 | `ocron`      | Add a ir.cron record                     |
-| `obtn`       | Add Odoo button                          |
+| `obtn`       | Add Flectra button                          |
 | `obtnbox`    | Add Button Box on View                   |
 | `ogroup`     | Add group tag on View                    |
 | `ofield`     | Add Field on View                        |
@@ -177,7 +177,7 @@ Below is a list of all available snippets.
 | CSVSnippet          | Description                     |
 | ------------------- | ------------------------------- |
 | `ocolumns`          | Create columns to access groups |
-| `odoo_access_entry` | Create entry to access groups   |
+| `flectra_access_entry` | Create entry to access groups   |
 
 
 </details>
@@ -192,6 +192,6 @@ See [changelog](CHANGELOG.md).
 
 ## Credits
 
-This snippets are based in [odoo-pycharm-templates](https://github.com/mohamedmagdy/odoo-pycharm-templates) project.
+This snippets are based in [flectra-pycharm-templates](https://github.com/mohamedmagdy/flectra-pycharm-templates) project.
 
 Copyright (C) 2018-2023 by Michell Stuttgart
